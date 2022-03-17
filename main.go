@@ -3,6 +3,7 @@ package main
 import (
 	"MockUmf/route"
 	"MockUmf/server"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"reflect"
 )
@@ -24,5 +25,6 @@ func main() {
 
 		}*/
 	}
+	fmt.Println("start listen ", server.ListenAddr)
 	router.Run(server.ListenAddr)
 }
